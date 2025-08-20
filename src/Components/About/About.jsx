@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import profile_img from '../../assets/profile.png'
+import profile_img from '../../assets/profile.webp'
 
 
 

@@ -2,6 +2,9 @@ import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
 import About from './Components/About/about'
+import MyWork from './Components/MyWork/MyWork'
+import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   let myName  = "Shraddha"
@@ -14,6 +17,9 @@ const App = () => {
       <Navbar/>
       <Hero name={myName} city={myCity}/>
       <About/>
+      <MyWork/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

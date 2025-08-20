@@ -1,12 +1,12 @@
 import React from 'react'
 import './About.css'
-import profile_img from '../../assets/about_profile.svg'
+import profile_img from '../../assets/profile.png'
 
 
 
 const about = () => {
     return (
-        <div className='about'>
+        <div className='about' id='about'>
             <div className="about-title">
                 <h1>About me</h1>
             </div>
@@ -16,18 +16,19 @@ const about = () => {
                 </div>
                 <div className="about-right">
                     <div className="about-para">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, atque. Optio temporibus, aspernatur ratione, natus, voluptate ullam magni deserunt itaque animi reiciendis dolorum. Cumque maiores nobis vel quis recusandae asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, atque. Optio temporibus, aspernatur ratione, natus, voluptate ullam magni deserunt itaque animi reiciendis dolorum. Cumque maiores nobis vel quis recusandae asperiores.</p>
+                        <p>I’m a motivated Full Stack Web Developer with expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js) and experience building scalable and responsive web applications.</p>
+                        <p>Skilled in both frontend and backend development, I enjoy designing dynamic user interfaces with React, Tailwind CSS, and Bootstrap, while also implementing secure REST APIs and backend logic. I’m a fast learner, collaborative team player, and problem solver who loves creating efficient, maintainable, and impactful solutions.</p>
 
                     </div>
                     <div className="about-skills">
-                        <div className="about-skill"><p>html & css</p> <hr style={{ width: "50%" }}></hr></div>
-                        <div className="about-skill"><p>html & css</p> <hr style={{ width: "70%" }}></hr></div>
-                        <div className="about-skill"><p>html & css</p> <hr style={{ width: "60%" }}></hr></div>
-                        <div className="about-skill"><p>html & css</p> <hr style={{ width: "50%" }}></hr></div>
+                        <div className="about-skill"><p>HTML & CSS</p> <hr style={{ width: "60%" }}></hr></div>
+                        <div className="about-skill"><p>REACT JS</p> <hr style={{ width: "70%" }}></hr></div>
+                        <div className="about-skill"><p>JAVASCRIPT</p> <hr style={{ width: "60%" }}></hr></div>
+                        <div className="about-skill"><p>NODEJS</p> <hr style={{ width: "50%" }}></hr></div>
                     </div>
                 </div>
             </div>
+            
         </div>
 
 

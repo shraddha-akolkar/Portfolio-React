@@ -1,43 +1,62 @@
-.footer{
-    margin: 50px 170px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.footer {
+  background: #0a192f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-.footer-bottom{
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
-.fotter-bottom-right{
-    display: flex;
-    gap: 50px;
-    margin-bottom: 50px;
-    
+/* Footer Nav Links */
+.footer-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap; /* ✅ allows wrapping neatly instead of overflow */
 }
 
+.footer-links a {
+  text-decoration: none;
+  color: #aaa;
+  transition: 0.3s;
+  font-size: 14px;
+}
 
-/*  */
-@media screen and (max-width:768px) {
-  .footer {
-    margin: 20px;
-    gap: 20px;
+.footer-links a:hover {
+  color: #64ffda;
+}
+
+/* Footer Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* ✅ center align always */
+}
+
+.footer-socials a {
+  font-size: 20px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #64ffda;
+  transform: scale(1.2);
+}
+
+/* ✅ Small screens: keep nav clean */
+@media (max-width: 768px) {
+  .footer-links {
+    gap: 12px;
+    flex-wrap: wrap; /* links can wrap but will look neat */
   }
 
-  .footer-bottom {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .footer-bottom-right {
-    /* flex-direction: column; */
-    gap: 10px;
-    margin-bottom: 20px;
-    /* align-items: center; */
+  .footer-socials {
+    margin-top: 10px;
   }
 }

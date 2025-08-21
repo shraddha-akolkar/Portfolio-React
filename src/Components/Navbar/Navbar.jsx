@@ -1,32 +1,31 @@
-import React from 'react'
-import './Navbar.css'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-// import image1 from '../../assets/name_logo.png'
-
-
-
+import React, { useState } from "react";
+import "./Navbar.css";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    
+    <nav className="navbar">
+      <div className="logo" >Shraddha Akolkar</div>
 
-
-    <div className="navbar">
- <div className="nav-logo">§</div>
-    <div className='nav-menu-list'>
-      <ul className="nav-menu">
-        <li><AnchorLink className='anchor-link' offset={50} href='#home'>Home</AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#about'>About Me</AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#work'>Portfolio</AnchorLink></li>
-        <li><AnchorLink className='anchor-link' offset={50} href='#contact'>Contact</AnchorLink></li>
-    
+      {/* Desktop Menu */}
+      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" className="connect-btn">Connect Me</a></li>
       </ul>
-     </div>
-      <div className="nav-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink> </div>
 
-    
-    </div>
-  )
-}
+      {/* Hamburger Menu */}
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

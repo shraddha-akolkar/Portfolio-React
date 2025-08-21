@@ -1,26 +1,28 @@
-import React from 'react'
-import './Hero.css'
-import profile_img from '../../assets/profile.webp'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import React from "react";
+import "./Hero.css";
+import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
 
-
-const Hero = ({name}) => {
+const Hero = () => {
   return (
-    <div className='hero' id='home'>
-      <img src={profile_img} alt="" />
-      <h1 ><span className='heading'> I'm {name} , </span><br></br>Full Stack Developer(Mern)</h1>
-      <p>I'm a passionate MERN Stack Developer skilled in building full-stack web applications using MongoDB, Express.js, React.js, and Node.js. I love creating scalable, efficient, and user-friendly digital solutions.</p>
-      <div className="hero-action">
-        <div className="hero-connect"><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect With Me</AnchorLink></div>
-        <div className="hero-resume">
-           <a 
-            href="https://drive.google.com/file/d/170sihXH9CNj0jTIecf4nHaB4CDmimFza/view?usp=drive_link" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >My Resume</a></div>
-      </div>
-    </div>
-  )
-}
+    <section id="home" className="hero">
+      <div className="hero-content">
+        <h1 className="hero-name">Shraddha Akolkar</h1>
+        <h2 className="hero-role">Full Stack Developer</h2>
 
-export default Hero
+        <div className="hero-icons">
+          <a href="https://github.com/shraddha-akolkar" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/shraddha-akolkar-0154a2272/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://drive.google.com/file/d/1aicDhTEzXry6bvQYIxeBXgT00kC39F5W/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
+            <FaFilePdf />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

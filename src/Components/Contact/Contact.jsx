@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css';
 import mail_icon from '../../assets/mail_icon.svg';
 import location_icon from '../../assets/location_icon.svg';
-import call_icon from '../../assets/call_icon.svg';
+import axios from 'axios';
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -11,14 +11,12 @@ const Contact = () => {
   formData.append("access_key", "2aeb4438-d656-43fd-a467-9c5f45ac733b");
 
   try {
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-    const result = await res.json();
+    const result = await axios.post("https://api.web3forms.com/submit",  formData
+    );
+    
     console.log("Response:", result);
-    if (result.success) {
-      alert("Success! " + result.message);
+    if (result.status) {
+      alert("Success! " + result.data.message);
       event.target.reset();
     } else {
       alert("Error: " + result.message);
@@ -50,10 +48,7 @@ const Contact = () => {
               <img src={location_icon} alt="" />
               <p>Pune, Maharashtra</p>
             </div>
-            <div className="contact-detail">
-              <img src={call_icon} alt="" />
-              <p>+91 79729 67626</p>
-            </div>
+            
           </div>
         </div>
 

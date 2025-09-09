@@ -1,11 +1,19 @@
 import React from "react";
 import "./Projects.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import project1 from "../../assets/project1.webp";
 import project2 from "../../assets/project2.webp";
 import project3 from "../../assets/project3.webp";
 import project4 from "../../assets/project4.webp";
 import project5 from "../../assets/project5.webp";
 import project6 from "../../assets/project6.webp";
+import project7 from "../../assets/project7.webp";
+import project8 from "../../assets/project8.webp";
 
 const Projects = () => {
   const projectData = [
@@ -45,6 +53,18 @@ const Projects = () => {
       github: "https://github.com/shraddha-akolkar/library-management-project",
       demo: "https://libraray-management-javascript.netlify.app/",
     },
+    {
+      id: 7,
+      img: project7,
+      github: "https://github.com/shraddha-akolkar/real-estate",
+      demo: "https://estate-projects.netlify.app/",
+    },
+    {
+      id: 8,
+      img: project8,
+      github: "https://github.com/shraddha-akolkar/gemini-clone",
+      demo: "https://gemini-clone-aii.netlify.app/",
+    },
   ];
 
   return (
@@ -55,31 +75,44 @@ const Projects = () => {
         full-stack development skills.
       </p>
 
-      <div className="projects-grid">
+      {/* ✅ Swiper Slider */}
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        breakpoints={{
+          768: { slidesPerView: 2 }, // 2 cards on tablet
+          1024: { slidesPerView: 3 }, // 3 cards on desktop
+        }}
+      >
         {projectData.map((project) => (
-          <div className="project-card" key={project.id}>
-            <img src={project.img} alt={`Project ${project.id}`} />
-            <div className="project-links">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn"
-              >
-                GitHub
-              </a>
-              <a
-                href={project.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn demo-btn"
-              >
-                Live Demo
-              </a>
+          <SwiperSlide key={project.id}>
+            <div className="project-card">
+              <img src={project.img} alt={`Project ${project.id}`} />
+              <div className="project-links">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn demo-btn"
+                >
+                  Live Demo
+                </a>
+              </div>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 };

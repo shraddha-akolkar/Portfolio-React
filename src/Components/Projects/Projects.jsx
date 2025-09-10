@@ -14,6 +14,7 @@ import project5 from "../../assets/project5.webp";
 import project6 from "../../assets/project6.webp";
 import project7 from "../../assets/project7.webp";
 import project8 from "../../assets/project8.webp";
+import project9 from "../../assets/project9.webp"
 
 const Projects = () => {
   const projectData = [
@@ -63,6 +64,12 @@ const Projects = () => {
       id: 8,
       img: project8,
       github: "https://github.com/shraddha-akolkar/gemini-clone",
+      demo: "https://gemini-clone-aii.netlify.app/",
+    },
+    {
+      id: 9,
+      img: project9,
+      github: "https://github.com/shraddha-akolkar/QuickCart",
       demo: "https://gemini-clone-aii.netlify.app/",
     },
   ];

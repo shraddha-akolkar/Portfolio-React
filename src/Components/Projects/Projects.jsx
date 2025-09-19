@@ -12,7 +12,7 @@ import project3 from "../../assets/project3.webp";
 import project4 from "../../assets/project4.webp";
 import project5 from "../../assets/project5.webp";
 import project6 from "../../assets/project6.webp";
-import project7 from "../../assets/project7.webp";
+// import project7 from "../../assets/project7.webp";
 import project8 from "../../assets/project8.webp";
 import project9 from "../../assets/project9.webp";
 import project10 from "../../assets/project10.webp";
@@ -55,12 +55,12 @@ const Projects = () => {
       github: "https://github.com/shraddha-akolkar/library-management-project",
       demo: "https://libraray-management-javascript.netlify.app/",
     },
-    {
-      id: 7,
-      img: project7,
-      github: "https://github.com/shraddha-akolkar/real-estate",
-      demo: "https://estate-projects.netlify.app/",
-    },
+    // {
+    //   id: 7,
+    //   img: project7,
+    //   github: "https://github.com/shraddha-akolkar/real-estate",
+    //   demo: "https://estate-projects.netlify.app/",
+    // },
 
     {
       id: 10,

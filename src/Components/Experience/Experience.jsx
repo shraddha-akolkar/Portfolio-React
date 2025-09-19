@@ -21,7 +21,7 @@ const Experience = () => {
         <div className="experience-meta">
           <span className="meta-item">
             <FaMapMarkerAlt className="meta-icon location-icon" />
-            Pune, India
+            Ahmednagar, India
           </span>
           <span className="meta-item">
             <FaCalendarAlt className="meta-icon time-icon" />

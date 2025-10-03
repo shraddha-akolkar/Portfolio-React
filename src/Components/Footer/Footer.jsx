@@ -30,7 +30,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/shraddha-akolkar-0154a2272/" target="_blank" rel="noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://drive.google.com/file/d/1aicDhTEzXry6bvQYIxeBXgT00kC39F5W/view?usp=drivesdk" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1Z_7NurTb0P78PZBm6Ro4dytVwltUowjD/view?usp=drive_link" target="_blank" rel="noreferrer">
             <FaFilePdf />
           </a>
         </div>

@@ -14,7 +14,7 @@ import {
   FaBrain,
   FaHandsHelping,
 } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss, SiGit } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiGithub } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -63,8 +63,8 @@ const Skills = () => {
               <p>Tailwind CSS</p>
             </div>
             <div className="skill-card">
-              <SiGit className="skill-icon git" />
-              <p>Git</p>
+              <SiGithub className="skill-icon git" />
+              <p>GitHub</p>
             </div>
           </div>
         </div>

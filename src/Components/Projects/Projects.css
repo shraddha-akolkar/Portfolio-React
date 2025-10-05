@@ -105,3 +105,44 @@
   transform: scale(1.2);
   transition: 0.3s;
 }
+
+@media (max-width: 420px) {
+  .projects {
+    padding: 50px 10px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .projects-subtitle {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .project-card img {
+    height: 160px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none; /* hide arrows on very small screens */
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}

@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-content">
         <h1 className="hero-name">Shraddha Akolkar</h1>
-        <h2 className="hero-role">Full Stack Developer</h2>
+        <h2 className="hero-role">Full Stack Developer </h2>
 
         <div className="hero-icons">
           <a href="https://github.com/shraddha-akolkar" target="_blank" rel="noopener noreferrer">

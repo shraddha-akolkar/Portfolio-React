@@ -6,15 +6,13 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-  FaDatabase,
   FaUsers,
   FaLightbulb,
   FaComments,
   FaClock,
-  FaBrain,
   FaHandsHelping,
 } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss, SiGithub } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiGithub, SiExpress } from "react-icons/si"; // ✅ added SiExpress
 
 const Skills = () => {
   return (
@@ -51,12 +49,12 @@ const Skills = () => {
               <p>Node.js</p>
             </div>
             <div className="skill-card">
-              <SiMongodb className="skill-icon mongo" />
-              <p>MongoDB</p>
+              <SiExpress className="skill-icon express" />
+              <p>Express.js</p>
             </div>
             <div className="skill-card">
-              <FaDatabase className="skill-icon sql" />
-              <p>SQL</p>
+              <SiMongodb className="skill-icon mongo" />
+              <p>MongoDB</p>
             </div>
             <div className="skill-card">
               <SiTailwindcss className="skill-icon tailwind" />
@@ -89,7 +87,6 @@ const Skills = () => {
               <FaClock className="soft-icon" />
               <p>Time Management</p>
             </div>
-            
             <div className="soft-card">
               <FaHandsHelping className="soft-icon" />
               <p>Adaptability</p>
@@ -98,7 +95,6 @@ const Skills = () => {
               <FaLightbulb className="soft-icon" />
               <p>Creativity</p>
             </div>
-            
           </div>
         </div>
       </div>

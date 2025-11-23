@@ -72,8 +72,8 @@ const Projects = () => {
     {
       id: 8,
       img: project8,
-      github: "https://github.com/shraddha-akolkar/gemini-clone",
-      demo: "https://gemini-clone-aii.netlify.app/",
+      github: "https://github.com/shraddha-akolkar/gemini-ai-master",
+      demo: "https://gemini-ai-master.netlify.app/",
     },
     // {
     //   id: 9,
